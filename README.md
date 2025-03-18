@@ -1,1 +1,4 @@
-## Ссылка на демонстрацию демо-проекта:https://aasevastyanov.github.io/trips-test-project/„лЯ удобств добавил свой reset.css
+## РЎСЃС‹Р»РєР° РЅР° РґРµРјРѕРЅСЃС‚СЂР°С†РёСЋ РґРµРјРѕ-РїСЂРѕРµРєС‚Р°:
+https://aasevastyanov.github.io/trips-test-project/
+
+Р”Р»СЏ СѓРґРѕР±СЃС‚РІ РґРѕР±Р°РІРёР» СЃРІРѕР№ reset.css
