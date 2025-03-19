@@ -203,11 +203,28 @@
 }
 
 .table-content {
+  max-height: 750px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 8px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
+
+.table-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.table-content::-webkit-scrollbar-thumb {
+  background: #1A202433; 
+  border-radius: 2px; 
+}
+
+.table-content::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
 
 .trip-row {
   display: flex;
@@ -216,7 +233,13 @@
   padding-left: 16px;
   gap: 28px;
   border-radius: 6px;
+  border: 1px solid #FFFFFF;
   background-color: #FFFFFF;
+  transition: border-color .3s ease;
+}
+
+.trip-row:hover {
+  border-color: #9BCFFD;
 }
 
 .trip-cell__grouped div:nth-child(1) {
@@ -270,6 +293,11 @@
   border-bottom: 1px solid rgba(13, 99, 227, 0.2);
 }
 
+.trip-row:hover .trip-cell__block:nth-child(1)::after {
+  border-color: #FFFFFF;
+  transition: border-color .3s ease;
+}
+
 .trip-content .trip-cell__block:nth-child(2) .trip-cell__value,
 .trip-content .trip-cell__block:nth-child(5) .trip-cell__value {
   color: #252C32;
@@ -317,4 +345,8 @@
   z-index: 2;
   background-color: #303940;
   color: #FFFFFF;
+}
+
+#svg-more{
+  cursor: pointer;
 }
